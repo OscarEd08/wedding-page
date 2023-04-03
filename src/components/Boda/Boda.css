@@ -1,0 +1,48 @@
+.boda{
+    padding: 20px;
+}
+
+.boda img{
+    margin-top: 150px;
+}
+
+.boda h1{
+    font-size: 2rem;
+    font-family: "Ludo Clean";
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+.boda h3{
+    font-size: 1.5rem;
+    font-family: "Avenir Light";
+    font-weight: 600;
+    letter-spacing: 2px;    
+}
+
+.boda p{
+    font-size: 1.35rem;
+    font-family: "Avenir Light";    
+}
+
+hr{
+    margin: auto;
+    width: 30px;
+    border: 1px solid #163E3A;
+}
+
+.boda > div{
+    display: grid;
+    gap: 15px;
+}
+
+.boda > div:last-of-type{
+    line-height: 35px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width:530px) {
+    .boda p{
+        font-size: 1.0rem;
+    }
+}
