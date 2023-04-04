@@ -1,9 +1,9 @@
 .registro{
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
-.registro img{
-    margin-top: 100px;
+.registro > div:first-child{
+  align-self: end;
 }
 
 .registro h1 {
@@ -19,11 +19,10 @@
   letter-spacing: 3px;
 }
 
-.registro > div{
+.registro > div:not(:first-child){
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 150px;
-  margin-bottom: 50px;
+  grid-column-gap: 150px;  
 }
 
 .registro > div span {
@@ -33,7 +32,8 @@
 
 .registro > p:last-of-type {
   font-size: 1.5rem;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+  align-self: start;
   line-height: 40px;
   font-weight: 600;
   font-style: italic;
@@ -45,7 +45,7 @@
       letter-spacing: 2px;
   }
 
-  .registro > div{
+  .registro > div:not(:first-child){
     grid-column-gap: 90px;
   }
 

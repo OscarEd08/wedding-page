@@ -4,8 +4,10 @@ import "./Boda.css";
 function Boda() {
   return (
     <div className="container-sections boda" id="boda">
-      <img src={flower} alt="flower" />
-      <h1>LA BODA</h1>
+      <div>
+        <img src={flower} alt="flower" />
+        <h1>LA BODA</h1>
+      </div>
       <div>
         <h3>Cuándo</h3>
         <hr />

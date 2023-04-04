@@ -1,9 +1,6 @@
-.boda{
-    padding: 20px;
-}
-
-.boda img{
-    margin-top: 150px;
+.boda > div:first-of-type{   
+    place-items: center;
+    align-self: end;
 }
 
 .boda h1{
@@ -38,11 +35,11 @@ hr{
 
 .boda > div:last-of-type{
     line-height: 35px;
-    margin-bottom: 150px;
+    align-self: start;
 }
 
 @media screen and (max-width:530px) {
     .boda p{
-        font-size: 1.0rem;
+        font-size: 1.2rem;
     }
 }

@@ -1,5 +1,5 @@
-.nosotros img{
-    margin-top: 150px;
+.nosotros div{
+    align-self: end;
 }
 
 .nosotros h1{
@@ -13,11 +13,11 @@
 .nosotros p{
     width: 100vw;
     max-width: 1000px;
-    padding: 0 4rem;
+    padding: 2.4rem;
     font-size: 2.3rem;
     font-family: "French Script MT";
     text-align: center;
-    margin-bottom: 50px;
+    align-self: start;
     line-height: 60px;
 }
 
@@ -32,15 +32,11 @@
 }
 
 @media screen and (max-width:530px) {
-    .nosotros img{
-        margin-top: 15px;
-    }
     .nosotros h1{
-        font-size: 3.5rem;
+        font-size: 3.5rem;        
     }
     .nosotros p{
         font-size: 1.8rem;
-        line-height: 30px;
-        margin-bottom: 60px;
+        line-height: 30px;        
     }
 }
