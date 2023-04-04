@@ -7,7 +7,7 @@
     font-family: "Ludo Clean";
     font-weight: 200;
     letter-spacing: 2px;
-    margin-top: 100px;
+    padding-top: 60px;
 }
 
 .container-sections iframe{
@@ -19,4 +19,14 @@
     justify-self: center;
     margin: 50px 0;
     padding: 0 4rem;
+}
+
+@media screen and (max-width:530px) {
+    .mapa h1{
+        font-size: 1.5rem;
+    }
+    .container-sections iframe{
+        padding: 0 2rem;
+        height: 400px;
+    }
 }
