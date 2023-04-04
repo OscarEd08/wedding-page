@@ -1,83 +1,98 @@
 :root {
-    --font-size-large: 11rem;
-    --letter-spacing-large: 1rem;
-    --font-family-script: "French Script MT";
-    --font-size-medium: 1.6rem;
-    --letter-spacing-medium: 5px;
-    --font-family-light: "Avenir Light";
-    --font-size-small: 1.5rem;
-    --font-family-bold: "Ludo Clean";
-  }
-  
-  .container {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-  }
-    
-  .container img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-  }
-  
-  .text-bg{
-      display: grid;
-      place-items: center;
-      position: absolute;
-      color: var(--primary-color);
-      margin-top: -100px;
-  }
-  
-  .img-txt:first-child{
-      margin-bottom: 70px;
-      font-size: var(--font-size-large);
-      letter-spacing: var(--letter-spacing-large);
-      font-family: var(--font-family-script);
-      text-align: center;
-  }
-  
-  .img-txt:nth-child(2){
-      font-size: var(--font-size-medium);
-      letter-spacing: var(--letter-spacing-medium);
-      font-family: var(--font-family-light);
-      margin-bottom: 40px;
-  }
-  
-  .img-txt:nth-child(3){
-      font-size: var(--font-size-small);
-      font-family: var(--font-family-bold);
-      letter-spacing: var(--letter-spacing-medium);
-  }
-  
-  .down-arrow{
-      padding-top: 80px;
-      width: 40px;
-  }
-  
-  @media screen and (max-width: 950px), (max-width: 560px) {
-    .img-txt:first-child {
-        margin-top: -100px;
-        text-align: center;
-        font-size: 8rem;
-        letter-spacing: 0.5rem;
-    }
-
-    .img-txt:nth-child(2),
-    .img-txt:nth-child(3) {
-        font-size: 1.2rem;
-        letter-spacing: 3px;
-    }
-
-    .img-txt:first-child {
-        margin-top: 0px;
-        font-size: 3.3rem;
-    }
-
-    .img-txt:nth-child(3) {
-        font-size: 0.8rem;
-    }
+  --font-size-large: 11rem;
+  --letter-spacing-large: 1rem;
+  --font-family-script: "French Script MT";
+  --font-size-medium: 1.6rem;
+  --letter-spacing-medium: 5px;
+  --font-family-light: "Avenir Light";
+  --font-size-small: 1.5rem;
+  --font-family-bold: "Ludo Clean";
 }
-  
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-bg {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  color: var(--primary-color);
+  margin-top: -100px;
+}
+
+.img-txt:first-child {
+  margin-bottom: 70px;
+  font-size: var(--font-size-large);
+  letter-spacing: var(--letter-spacing-large);
+  font-family: var(--font-family-script);
+  text-align: center;
+}
+
+.img-txt:nth-child(2) {
+  font-size: var(--font-size-medium);
+  letter-spacing: var(--letter-spacing-medium);
+  font-family: var(--font-family-light);
+  margin-bottom: 40px;
+}
+
+.img-txt:nth-child(3) {
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-bold);
+  letter-spacing: var(--letter-spacing-medium);
+}
+
+.down-arrow {
+  padding-top: 80px;
+  width: 40px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.down-arrow {
+  animation: bounce 1.2s infinite;
+}
+
+@media screen and (max-width: 950px), (max-width: 560px) {
+  .img-txt:first-child {
+    margin-top: -100px;
+    text-align: center;
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .img-txt:nth-child(2),
+  .img-txt:nth-child(3) {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  .img-txt:first-child {
+    margin-top: 0px;
+    font-size: 3.3rem;
+  }
+
+  .img-txt:nth-child(3) {
+    font-size: 0.8rem;
+  }
+}
