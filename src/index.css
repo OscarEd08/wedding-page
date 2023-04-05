@@ -73,3 +73,32 @@
     color: var(--primary-color);
     text-align: center;
   }
+
+  .container-sections .arrow{
+    display: none;
+  }
+
+  @media screen and (max-width:530px) {
+    .container-sections .arrow{
+      display: block;
+      align-self: start;
+      width: 40px;
+    }
+    
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    
+    .down-arrow-2 {
+      animation: bounce 1.2s infinite;
+    }
+  }
+  
