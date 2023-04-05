@@ -12,6 +12,7 @@ function Boda() {
         <h3>Cuándo</h3>
         <hr />
         <p>El 02 de Junio del 2023</p>
+        <p>19:00</p>
       </div>
       <div>
         <h3>Dónde</h3>
